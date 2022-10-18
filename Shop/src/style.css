@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{ 
+    font-family: sans-serif;
+}
+
+i{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/**
+* footer
+**/
+.footer{
+  position:static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: darksalmon;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/**
+* Navbar 
+**/
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darksalmon;
+    color: white;
+    padding: 25px 60px;
+    margin-bottom: 30px;
+}
+.cart{
+    position: relative;
+    background-color: white;
+    color: black;
+    padding: 5px;
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+.cartAmount{
+
+    position: absolute;
+    top: -10px;
+    right: -5px;
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
+
+}
+
+/**
+* Grid items index.html, main.js
+**/
+.shop{
+    display: grid;
+    grid-template-columns: repeat(4, 225px);
+    gap: 30px;
+    justify-content: center;
+
+
+}
+@media (max-width:1000px){
+    .shop{
+        grid-template-columns: repeat(2, 225px); 
+    }
+}
+@media (max-width:500px){
+    .shop{
+        grid-template-columns: repeat(1, 225px); 
+    }
+}
+
+.item{
+    border: 2px solid black;
+    border-radius: 4px;
+}
+.item img {
+    width: 100%;
+    border-radius: 2px 2px 0 0;
+  }
+
+.details{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+.price-quantity{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    
+}
+
+/**
+* label and buttons cart.js
+**/
+
+.text-center{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.HomeBtn, .checkout, .removeAll{
+    background-color: black;
+    color:white;
+    border: none;
+    padding: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.checkout{
+    background-color: green;
+}
+.removeAll{
+    background-color: red;
+}
+
+bi-x-lg{
+    color: red;
+    font-weight: bold;
+}
+
+/** shopping-cart
+*   cart.html
+**/
+
+.shopping-cart{
+    display: grid;
+    grid-template-columns: repeat(1, 320px);
+    justify-content: center;
+    gap: 15px;
+    
+}
+/** cart-item
+*   cart.html
+**/
+.cart-item{
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+}
+.title-price-x{
+    width: 195px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.title-price{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.cart-item-price{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 3px 5px;
+}
+/**
+* Sorting buttons
+**/
+.sort{ 
+    display: flex; 
+    align-items: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    
+}
+@media (max-width:750px){
+    .sort{
+        flex-direction: column;
+    }
+}
+
+.normal, .higher, .lower, .range1, .range2, .range3, .range4{
+    height: 50px;
+    width: 110px;
+    margin: 5px;
+}
+
+/**
+FILTER index.html
+**/
+.filterData{
+
+    position: relative;
+    display: flex; 
+    margin: 20px;
+    
+    min-width: 100px;
+    
+}
+.bi-x-circle-fill{
+   margin-top: 22px;
+}
+
+#searchBar{
+    margin: 20px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    height: 20px;
+    width: 80%;
+    padding: 2px 23px 2px 30px;
+    outline: 0;
+    background-color: #f5f5f5;
+    
+}
+  #searchBar:hover, #searchBar:focus {
+    border: 1.5px solid #009688;
+    background-color: white;
+  }
+
+
+/**
+Registraion and login styling registration.html, login.html
+**/
+
+* {box-sizing: border-box}
+
+.main-container{
+    width: 500px;
+    height: auto;
+    margin: 0 auto
+}
+
+.container {
+  padding: 16px;
+  
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: white;
+ 
+}
+hr {
+    border: 1px solid #141414;
+    margin-bottom: 25px;
+  }
+  
+  .registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.registerbtn:hover {
+  opacity:1;
+}
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+
+
+   

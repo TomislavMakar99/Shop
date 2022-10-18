@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online store</title>
+    <link rel="stylesheet" href="src/style.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">
+            <h2>Online store</h2>
+        </a>
+        <a href="cart.html">
+            <div class="cart">
+                <i class="bi bi-cart2"></i>
+                <div id="cartAmount" class="cartAmount">0</div>
+            </div>     
+        </a>
+        <div class="reg-log" id="regLog">
+            
+        </div>
+    </div> 
+
+    <div class="sort">
+        <p>Sort by price</p>
+        <button id="normal" class="normal">Normal</button>
+        <button id="range1" class="range1">Up to 20$</button>
+        <button id="range2" class="range2">20$-100$</button>
+        <button id="range3" class="range3">100$-200$</button>
+        <button id="range4" class="range4">200$-above</button>
+        <button id="higher" class="higher">Higher to lower</button>
+        <button id="lower" class="lower">Lower to higher</button> 
+        <div class="filterData" id="filterData">
+            <input 
+                type="text"               
+                name="searchBar"
+                id="searchBar"
+                placeholder="search for items "
+                />
+        <i onclick="clearData()"class="bi bi-x-circle-fill" id="clear-icon"></i>      
+    </div> 
+    </div> 
+    
+    
+    
+    <div class="shop" id="shop">    
+    </div>
+
+    <div class="footer" >
+        <i class="bi bi-github" >
+        <a href="https://github.com/CroPeak">Github link</a>
+        </i>  
+    </div>
+
+</body>
+<script src="src/Data.js"></script>
+<script src="src/main.js"></script>
+</html>
